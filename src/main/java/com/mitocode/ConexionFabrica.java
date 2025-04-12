@@ -9,6 +9,16 @@ import com.mitocode.inter.impl.ConexionVacia;
 
 public class ConexionFabrica {
 
+	/*
+	We have this interface that declares the way of behavior of each database. Then we have this
+	Factory, which has the role of creating instances of the interface IConexion.
+
+	The client, with that interface, will be able to connect to each database
+	 */
+
+
+
+
 	public IConexion getConexion(String motor) {
 		if (motor == null) {
 			return new ConexionVacia();
